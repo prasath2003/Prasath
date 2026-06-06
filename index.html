@@ -1,0 +1,410 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prasath N | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 20%, rgba(59,130,246,.25), transparent 25%),
+radial-gradient(circle at 80% 40%, rgba(16,185,129,.20), transparent 25%),
+radial-gradient(circle at 50% 80%, rgba(168,85,247,.25), transparent 30%);
+z-index:-1;
+animation:moveBg 12s infinite alternate;
+}
+
+@keyframes moveBg{
+from{transform:translateY(-20px);}
+to{transform:translateY(20px);}
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(15,23,42,.75);
+backdrop-filter:blur(12px);
+z-index:999;
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+section{
+padding:100px 8%;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.glass{
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.15);
+backdrop-filter:blur(12px);
+border-radius:25px;
+padding:40px;
+box-shadow:0 8px 32px rgba(0,0,0,.3);
+}
+
+.profile-img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #38bdf8;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-weight:400;
+color:#94a3b8;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 24px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:30px;
+margin:10px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.section-title{
+text-align:center;
+font-size:2.3rem;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+padding:25px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.skills span{
+display:inline-block;
+background:#1e293b;
+padding:10px 15px;
+border-radius:20px;
+margin:6px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+font-size:1.1rem;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.2rem;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Prasath N</div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div class="glass">
+
+<img src="profile.jpg" class="profile-img" alt="Prasath N">
+
+<h1>Prasath N</h1>
+
+<h2>Analyst (GL) | Newmark RF</h2>
+
+<p>
+Finance Professional with 3+ years of experience in
+General Ledger Accounting, Financial Reporting,
+Reconciliations and Data Analysis.
+</p>
+
+<br>
+
+<a href="https://www.linkedin.com/in/prasath-n-169276243" target="_blank" class="btn">
+LinkedIn
+</a>
+
+<a href="#contact" class="btn">
+Contact Me
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+
+<p>
+
+I am a dedicated finance and accounting professional currently working as an
+Analyst (GL) at Newmark RF.
+
+My expertise includes General Ledger Accounting,
+Accounts Payable, Accounts Receivable,
+Bank Reconciliation, Financial Reporting,
+Budget Analysis and Financial Modeling.
+
+I enjoy solving business problems through data,
+automation and process improvements.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="card">
+
+<h3>Analyst (GL) - Newmark RF</h3>
+
+<p>June 2023 - Present</p>
+
+<br>
+
+<ul>
+
+<li>General Ledger Accounting</li>
+<li>Month-End Close Activities</li>
+<li>Bank Reconciliation</li>
+<li>Financial Reporting</li>
+<li>Journal Entries</li>
+<li>Variance Analysis</li>
+<li>Budget Analysis</li>
+<li>Accounts Payable & Receivable</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="card skills">
+
+<span>MRI Software</span>
+<span>Yardi</span>
+<span>AvidXchange</span>
+<span>Datex</span>
+<span>Tally ERP</span>
+<span>Microsoft Excel</span>
+<span>Microsoft Word</span>
+<span>PowerPoint</span>
+<span>Financial Modeling</span>
+<span>Data Analysis</span>
+<span>General Ledger</span>
+<span>Financial Reporting</span>
+<span>Accounts Payable</span>
+<span>Accounts Receivable</span>
+<span>Bank Reconciliation</span>
+<span>Variance Analysis</span>
+<span>Budget Analysis</span>
+<span>Journal Entries</span>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2 class="section-title">Education & Certifications</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Bachelor of Commerce</h3>
+<p>Ramakrishna Mission Vivekananda College</p>
+<p>CGPA: 8.836</p>
+</div>
+
+<div class="card">
+<h3>Tally Essential Comprehensive</h3>
+<p>Grade A+</p>
+</div>
+
+<div class="card">
+<h3>Language Specialization</h3>
+<p>Proficient Certification</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="glass contact">
+
+<p>📞 8946087190</p>
+
+<p>📧 prasath200301@gmail.com</p>
+
+<p>📍 Chennai, India</p>
+
+<a href="mailto:prasath200301@gmail.com" class="btn">
+Send Email
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Prasath N | Portfolio Website
+
+</footer>
+
+<script>
+
+const cards=document.querySelectorAll('.card');
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity=1;
+entry.target.style.transform='translateY(0px)';
+
+}
+
+});
+
+});
+
+cards.forEach(card=>{
+
+card.style.opacity=0;
+card.style.transform='translateY(50px)';
+card.style.transition='all 0.8s ease';
+
+observer.observe(card);
+
+});
+
+</script>
+
+</body>
+</html>
+```
